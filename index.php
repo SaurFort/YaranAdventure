@@ -42,6 +42,8 @@
                         $img = "assets/images/bd/13.jpg";
                     } else if(!$page == 14) {
                         $page = 0;
+                    } else if($page > 14 || $page < 0) {
+                        header('Location: ?page=0');
                     }
                     $nextPage = $page + 1;
                     $beforePage = $page - 1;
@@ -66,6 +68,44 @@
                         $showNext = "no-show";
                     } else if($beforePage < 0) {
                         $showBefore = "no-show";
+                    }
+                ?>
+            </div>
+            
+            <div class="text">
+                <?php
+                    if($page == 1) {
+                        $text = "Un beau jour, pendant que Hèlyx s'occupait des coulpis.";
+                    } else if($page == 2) {
+                        $text = "Une étrange créature sorta des buissons, c'était un gloudiatre.";
+                    } else if($page == 3) {
+                        $text = "Hèlyx s'interposa entre le gloudiatre et les coulpis.";
+                    } else if($page == 4) {
+                        $text = "Le gloudiatre lui mit alors un gros coup de patte, le mettant au tapis.";
+                    } else if($page == 5) {
+                        $text = "Il s'appreta à dévorer un des coulpis, mais une flèche se planta dans l'arbre à côté.";
+                    } else if($page == 6) {
+                        $text = "Le gloudiatre lança un regard enragé vers l'origine de la flèche.";
+                    } else if($page == 7) {
+                        $text = "Il vit le jeune Yaran au loin qui était soumis à un intense stress.";
+                    } else if($page == 8) {
+                        $text = "Alors, le gloudiatre plein de rage, se mit à foncer sur Yaran ";
+                    } else if($page == 9) {
+                        $text = "Yaran devint encore plus stresser.";
+                    } else if($page == 10) {
+                        $text = "Il arma une nouvelle flèche alors que le gloudiatre lui foncé dessus.";
+                    } else if($page == 11) {
+                        $text = "Prit une grande inspiration...";
+                    } else if($page == 12) {
+                        $text = "Et tira sa flèche.";
+                    } else if($page == 13) {
+                        $text = "Heuresement, le gloudiatre se prit la flèche en pleine tête.";
+                    } else {
+                        $text = " ";
+                    }
+
+                    if($text != " ") {
+                        echo('<h5>' . $text . '</h5>');
                     }
                 ?>
             </div>
