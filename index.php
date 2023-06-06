@@ -77,7 +77,7 @@
                     if($page == 1) {
                         $text = "Un beau jour, pendant que Hèlyx s'occupait des coulpis.";
                     } else if($page == 2) {
-                        $text = "Une étrange créature sorta des buissons, c'était un gloudiatre.";
+                        $text = "Une étrange créature sorti des buissons, c'était un gloudiatre.";
                     } else if($page == 3) {
                         $text = "Hèlyx s'interposa entre le gloudiatre et les coulpis.";
                     } else if($page == 4) {
@@ -91,7 +91,7 @@
                     } else if($page == 8) {
                         $text = "Alors, le gloudiatre plein de rage, se mit à foncer sur Yaran ";
                     } else if($page == 9) {
-                        $text = "Yaran devint encore plus stresser.";
+                        $text = "Yaran devint encore plus stressé.";
                     } else if($page == 10) {
                         $text = "Il arma une nouvelle flèche alors que le gloudiatre lui foncé dessus.";
                     } else if($page == 11) {
